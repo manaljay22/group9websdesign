@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .scrolling-banner {
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    background: white;
+    color: red;
+    border: ;
+  }
+  .scrolling-banner p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    transform: translateX(100%);
+    animation: scroll-right 10s linear infinite;
+  }
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+
+
+
+<style>
+
+
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+div.mycontainer div {
+  width:20%;  
+  float:left;
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #777;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container2 {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 10px;
+  margin-top: 150px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #777;
+  padding: 0px 2px 2px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<style>
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 3px;
+  text-align: center;
+  color: white;
+}
+</style>
+
+<body bgcolor="white" bgproperties="fixed">
+<font style="arial" color="red">
+
+<div class="mycontainer">
+ <a href="Homepage.html"><img src="slay logo2.jpg" width="20%" height="106"> </a></div>
+<div class="scrolling-banner">
+<center> <p> <font size="12"> 50% discount coming soon this holiday season!!!</font></p> </center>
+</div>
+<div class="mycontainer">
+  <div style="background-color:#777;" align="center">
+    <a href="Homepage.html"><h3>HOME</h3></a>
+  </div>
+  
+  <div style="background-color:#777;" align="center">
+     <a href="gallery.html"><h3>GALLERY</h3></a>
+  </div>
+  
+  <div style="background-color:#777;" align="center">
+    <a href="index.html"><h3>ABOUT US</h3></a>
+  </div>
+  
+    <div style="background-color:#777;" align="center">
+    <a href=""><h3>CONTACT US</h3></a>
+	</div>
+	
+	  <div style="background-color:#777;" align="center">
+    <a href="order.html"><h3>ORDER HERE</h3></a>
+	</div>
+</div>
+</font>
+<p>
+<body>
+<div class="container2">
+  <center> <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+  <a href="gallery.html"> <img src="w1.jpg" style="width:30%"></center></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <a href="gallery.html"> <center><img src="w2.jpg" style="width:30%"></center></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+     <a href="gallery.html"><center><img src="w3.jpg" style="width:30%"></center></a>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+     <a href="gallery.html"><center><img src="m1.jpg" style="width:30%"></center></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+     <a href="gallery.html"><center><img src="m2.jpg" style="width:30%"></center></a>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <a href="gallery.html"><center> <img src="m1.jpg" style="width:30%"></center></a>
+  </div>
+    
+  <a class="prev" onClick="plusSlides(-1)">❮</a>
+  <a class="next" onClick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div></a></center>
+
+  <div class="row">
+    <div class="column">
+      <img src="w1.jpg" alt="SHINNY MERMAID = is usually use for wedding or anniversary. It has a design of feather on right shoulder that added fashion to it. " height="162" class="demo cursor" style="width:100%" onClick="currentSlide(1)">    </div>
+    <div class="column">
+      <img src="w2.jpg" alt="PEACOCK = the style of this dress is look like a peacock's back which has a beautiful style and enlighten the body of the dress." height="161" class="demo cursor" style="width:100%" onClick="currentSlide(2)">    </div>
+    <div class="column">
+      <img src="w3.jpg" alt="PREMIUM WHITE GOWN = it has a pure color of white cloth with a little split on the front which make a women looks to be highlited." height="161" class="demo cursor" style="width:100%" onClick="currentSlide(3)">    </div>
+    <div class="column">
+      <img src="m1.jpg" alt="CREAMY BROWN = a barong for men's top dress which a creamy chocolate brown color and has a light color of cloth." height="161" class="demo cursor" style="width:100%" onClick="currentSlide(4)">    </div>
+    <div class="column">
+      <img src="m2.jpg" alt="BLACK and WHITE BARONG = is a formal style of barong for a new generation. It added a new style to it." height="161" class="demo cursor" style="width:100%" onClick="currentSlide(5)">    </div>    
+    <div class="column">
+      <img src="m3.jpg" alt="Black and Violet hanbok = a korean dress for men made in fabric cloth." height="161" class="demo cursor" style="width:100%" onClick="currentSlide(6)">    </div>
+ </div>
+  </div>
+</div>
+</a>
+</p>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+   <footer>
+  <p>Slay Boutique | Copyright © 2024</p>
+</footer>
+</body>
+</html>
